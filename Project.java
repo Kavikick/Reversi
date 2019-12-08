@@ -145,7 +145,7 @@ class Side {
         return (face == " X") ? "black's" : "white's";
     }
 
-    public String face() {
+    public String getFace() {
         return face;
     }
 
@@ -178,7 +178,7 @@ class Direction {
         x = -x;
         y = -y;
     }
-    
+
     public int getX() {
         return x;
     }
@@ -223,7 +223,7 @@ class Board {
 
     List<Tile> headerRow() {
         List<Tile> temp = new ArrayList<Tile>();
-        
+
         temp.add(new BorderPiece(0,0,this));
         for (int i = 1; i < 9; i++) {
             temp.add(new BorderPiece(i,0,this,i));
@@ -235,7 +235,7 @@ class Board {
 
     List<Tile> bottomRow() {
         List<Tile> temp = new ArrayList<Tile>();
-        
+
         for (int i = 0; i < 11; i++) {
             temp.add(new BorderPiece(i,9,this));
         }
@@ -330,9 +330,9 @@ class Board {
         for (int row = 1; row < 9; row++) {
             for (int element = 1; element < 9; element++) {
                 Tile tile = rows.get(row).get(element);
-                if (tile.getSide().face() == " X") {
+                if (tile.getSide().getFace() == " X") {
                     countPieces[0]++;
-                } else if (tile.getSide().face() == " O") {
+                } else if (tile.getSide().getFace() == " O") {
                     countPieces[1]++;
                 }
             }
@@ -428,7 +428,7 @@ class Piece extends Tile{
     }
 
     public void show() {
-        System.out.print(side.face());
+        System.out.print(side.getFace());
     }
 
     public void flip(Direction dir) {
@@ -448,7 +448,7 @@ class Piece extends Tile{
                 //System.out.println("Marking Empty"+temp.getX()+" "+temp.getY());
                 temp.mark(dir);
             }
-            // if it's a Piece 
+            // if it's a Piece
             else if (board.getNeighbor(this, dir).getClass().equals(Piece.class)) {
                 Piece temp = (Piece) board.getNeighbor(this, dir);
                 //System.out.println("warning Piece"+temp.getX()+" "+temp.getY());
@@ -468,7 +468,7 @@ class Piece extends Tile{
         Tile n = b.getNeighbor(t, d);
         assert(n.getX() == 4);
         assert(n.getY() == 5);
-        
+
         t = board.getRow(4).get(4);
         assert(t.getX() == 4);
         assert(t.getY() == 4);
