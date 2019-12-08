@@ -41,7 +41,7 @@ class Reversi {
             min = counts[0];
         }
 
-        System.out.format("%s WINS!!! With %d points to %d", winner, max, min);
+        //System.out.format("%s WINS!!! With %d points to %d", winner, max, min);
     }
 
     // get input
@@ -279,17 +279,17 @@ class Board {
 
     public void show() {
         for (int i = 0; i < 100; i++) {
-            System.out.println("");
+            //System.out.println("");
         }
-        System.out.flush();
+        //System.out.flush();
         for (List<Tile> row: rows) {
             for (Tile tile: row) {
                 tile.show();
             }
-            System.out.format("%n");
+            //System.out.format("%n");
         }
         int[] counts = piecesCount();
-        System.out.format("Num of Black pieces: %d White pieces: %d%n", counts[0], counts[1]);
+        //System.out.format("Num of Black pieces: %d White pieces: %d%n", counts[0], counts[1]);
     }
 
     public void reset() {
@@ -308,7 +308,7 @@ class Board {
                     Piece thingy = (Piece) tile;
                     //System.out.println("home"+thingy.getX()+" "+thingy.getY());
                     thingy.warnNeighbors();
-                    System.out.println("");
+                    //System.out.println("");
                 }
             }
         }
@@ -370,7 +370,7 @@ class Tile {
     }
 
     public void show() {
-        System.out.print(face);
+        //System.out.print(face);
     }
 
     public void reset() {}
@@ -411,10 +411,12 @@ class EmptySpace extends Tile {
         dangerDirections.add(dir);
     }
 
+    /*
     public void show() {
         if (marked) System.out.print(" *");
         else super.show();
     }
+    */
 
     public void flipPieces() {
         for (Direction dir : dangerDirections) {
@@ -432,7 +434,7 @@ class Piece extends Tile{
     }
 
     public void show() {
-        System.out.print(side.getFace());
+        //System.out.print(side.getFace());
     }
 
     public void flip(Direction dir) {
