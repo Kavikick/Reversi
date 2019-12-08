@@ -358,7 +358,7 @@ class Tile {
     }
 
     public int getY() {
-        return /*y*/0;
+        return y;
     }
 
     public Side getSide() {
