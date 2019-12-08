@@ -158,7 +158,7 @@ class Side {
     }
 
     public boolean compare(Side friend) {
-        return face == friend.face();
+        return face == friend.getFace();
     }
 
     public Side clone() {
