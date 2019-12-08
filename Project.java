@@ -120,9 +120,11 @@ class Reversi {
     }
 }
 
+/*
 class BadInput extends Exception {
     static final long serialVersionUID = 0;
 }
+*/
 
 class Side {
     String face;
