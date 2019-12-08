@@ -48,7 +48,7 @@ class Reversi {
     void takeTurn() {
         board.show();
         while (true) {
-            try {
+            //try {
                 String input = c.readLine(board.currentTurn.whosTurn()+" turn, enter x y: ");
                 String[] args = input.split(" ");
                 int x = Integer.valueOf(args[0]);
@@ -56,6 +56,7 @@ class Reversi {
                 board.place(x,y); // Throws BadInput
                 board.reset();
                 break;
+            /*
             } catch (BadInput badInput) {
                 System.out.format("%nYou can't place there Please renter %n");
             } catch (IndexOutOfBoundsException outOfRange) {
@@ -63,6 +64,7 @@ class Reversi {
             } catch (Exception anythingElse) {
                 System.out.format("%nI have no idea what you did but it was bad.%n");
             }
+            */
         }
     }
 
