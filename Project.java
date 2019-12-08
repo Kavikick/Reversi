@@ -248,7 +248,7 @@ class Board {
         return rows.get(client.getY() + dir.getY()).get(client.getX() + dir.getX());
     }
 
-    public void place(int x, int y) throws BadInput{
+    public void place(int x, int y) /*throws*/ BadInput{
         if (getXY(x,y).getClass() == EmptySpace.class) {
             EmptySpace empty = (EmptySpace) rows.get(y).get(x);
             if (empty.isMarked()) {
@@ -257,11 +257,11 @@ class Board {
                 currentTurn.flip();
             } else {
              // Raise error
-             throw new BadInput();
+             //throw new BadInput();
             }
         } else {
             // Raise error
-            throw new BadInput();
+            //throw new BadInput();
         }
     }
 
