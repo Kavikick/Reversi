@@ -1,0 +1,11 @@
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.csprojAssemblyReference.cache
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.csproj.CoreCompileInputs.cache
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.AssemblyInfoInputs.cache
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.AssemblyInfo.cs
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/bin/Debug/netcoreapp2.2/Project.deps.json
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/bin/Debug/netcoreapp2.2/Project.runtimeconfig.json
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/bin/Debug/netcoreapp2.2/Project.runtimeconfig.dev.json
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/bin/Debug/netcoreapp2.2/Project.dll
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/bin/Debug/netcoreapp2.2/Project.pdb
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.dll
+/home/wesley/OneDrive/School/CPTR/Advanced Object Oriented/c#/Project/obj/Debug/netcoreapp2.2/Project.pdb
